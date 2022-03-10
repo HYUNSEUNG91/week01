@@ -18,7 +18,7 @@ SECRET_KEY = 'SPARTA'
 import certifi
 import pymongo
 ca = certifi.where()
-client = pymongo.MongoClient('mongodb+srv://test:sparta@cluster0.6cz6m.mongodb.net/Cluster0?retryWrites=true&w=majority', tlsCAFile=ca)
+client = pymongo.MongoClient('', tlsCAFile=ca)
 db = client.seoul_restroom
 
 # 페이지별 기능 구현
